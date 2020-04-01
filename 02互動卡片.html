@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        .wrap {
+            width: 100%;
+            display: flex;
+        }
+
+        .item {
+            width: 25%;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .item .txt {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .6);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: opacity .5s;
+            ;
+        }
+
+        .item:hover .txt {
+            opacity: 1;
+        }
+
+        .item .txt h2 {
+            font-size: 30px;
+            color: #ff0;
+            font-weight: 500;
+        }
+
+        .item .txt h2:after {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 2px;
+            margin: 10px 0;
+            background-color: rgb(255, 196, 0);
+        }
+
+        .item:hover h2:after {
+            width: 100%;
+            transition: width .5s .1s;
+        }
+
+
+        .item .txt p {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/500/400/?random=1">
+            <div class="txt">
+                <h2>DAY2互動圖文卡片</h2>
+                <p>製作一個互動圖文卡片怎麼切? 原理其實非常的簡單，只要善用 CSS 定位功能，就能簡單且輕鬆的達到這個效果囉</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/500/400/?random=3">
+            <div class="txt">
+                <h2>DAY2互動圖文卡片2</h2>
+                <p>製作一個互動圖文卡片怎麼切? 原理其實非常的簡單，只要善用 CSS 定位功能，就能簡單且輕鬆的達到這個效果囉</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/500/400/?random=4">
+            <div class="txt">
+                <h2>DAY2互動圖文卡片3</h2>
+                <p>製作一個互動圖文卡片怎麼切? 原理其實非常的簡單，只要善用 CSS 定位功能，就能簡單且輕鬆的達到這個效果囉</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/500/400/?random=5">
+            <div class="txt">
+                <h2>DAY2互動圖文卡片4</h2>
+                <p>製作一個互動圖文卡片怎麼切? 原理其實非常的簡單，只要善用 CSS 定位功能，就能簡單且輕鬆的達到這個效果囉</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
