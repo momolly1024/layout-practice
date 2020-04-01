@@ -5,28 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>人員介紹卡片</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;500&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             list-style: none;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            background-image: radial-gradient(circle, #083372, #2b4f8c, #476ca6, #638ac1, #81a9db);
+        }
+
+        body {
+            display: flex;
+            align-items: center;
         }
 
         .wrap {
             width: 1200px;
             display: flex;
             margin: auto;
+
         }
 
         .item {
-            width: 370px;
+            width: 368px;
             margin: 15px;
-
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid rgb(80, 42, 42);
+            transform: translateY(0px);
+            transition: .5s;
         }
 
 
         .item img {
             width: 100%;
+            vertical-align: middle;
         }
 
 
@@ -34,11 +53,65 @@
             border-bottom: 1px solid #888;
             padding-bottom: 0.3em;
             margin-bottom: 0.4em;
-
+            font-weight: 900;
+            transition: .25s;
         }
 
         .item p {
             line-height: 1.6;
+            font-weight: 500;
+            transition: .25s;
+        }
+
+
+
+
+
+
+        .item .txt {
+            padding: 20px;
+            position: relative;
+        }
+
+
+        .item .txt:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 0;
+            left: 0;
+            border-top: 50px solid transparent;
+            border-left: 184px solid rgb(255, 255, 255);
+            border-right: solid 184px rgb(255, 255, 255);
+            transform: translateY(-100%);
+
+        }
+
+
+        .item:hover {
+            transform: translateY(-50px);
+
+        }
+
+        .item:hover .txt {
+            background-image: linear-gradient(0deg, #F79292, #FED0B2);
+        }
+
+        .item:hover .txt:before {
+            border-left: 184px solid #FED0B2;
+            border-right: solid 184px #FED0B2;
+        }
+
+
+
+        .item:hover h2 {
+            color: rgb(54, 1, 9);
+            border-bottom-color: #fff;
+        }
+
+        .item:hover p {
+            color: rgb(4, 33, 77);
         }
     </style>
 </head>
@@ -49,7 +122,7 @@
             <div class="txt">
                 <h2>蔡旻佑</h2>
                 <p>蔡旻佑（1986年11月12日－），英文名Evan
-                    Yo，是台灣流行歌曲男歌手、作曲家、唱片製作人、演員、主持人，畢業於國立臺灣師範大學附屬高級中學音樂班、國立臺灣師範大學音樂學系。2001年，蔡旻佑參加飛碟電台歌唱比賽，獲經紀公司簽約。
+                    Yo，是台灣流行歌曲男歌手、作曲家、唱片製作人、演員、主持人，畢業於國立臺灣師範大學附屬高級中學音樂班、國立臺灣師範大學音樂學系。2001年，蔡旻佑參加飛碟電台歌唱比賽，獲經紀公司簽約。獲經紀公司簽約。獲經紀公司簽約。
                 </p>
                 </h2>
             </div>
@@ -57,7 +130,7 @@
         <div class="item"> <img src="https://picsum.photos/300/300/?random=10">
             <div class="txt">
                 <h2>蔡旻佑</h2>
-                <p>2006年，他加入綜藝天王吳宗憲的「嘉瑪音樂」，成為「憲憲家族」旗下藝人，也成為台灣索尼音樂娛樂旗下歌手，陸續發行個人創作專輯。2013年起，蔡旻佑開始嘗試多元發展，橫跨音樂、戲劇和主持領域。
+                <p>2006年，他加入綜藝天王吳宗憲的「嘉瑪音樂」，成為「憲憲家族」旗下藝人，也成為台灣索尼音樂娛樂旗下歌手，陸續發行個人創作專輯。2013年起，蔡旻佑開始嘗試多元發展，橫跨音樂、戲劇和主持領域。戲劇和主持領域。戲劇和主持領域。戲劇和主持領域。戲劇和主持領域。戲劇和主持領域。
                 </p>
                 </h2>
             </div>
