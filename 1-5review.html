@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>複習</title>
+    <style>
+        .flex {
+            width: 800px;
+            height: 800px;
+            background: #ccc;
+            display: flex;
+            /* flex-direction: row; flex的方向設定 預設本來就是ROW 水平*/
+            /* flex-direction: column  >　設為垂直排列; */
+            /* flex-direction: column; */
+            /* flex-wrap: wrap;　　＞　ｆｌｅｘ世界中是不會換行的，若是要換行要加入此設定 */
+            /* flex-wrap: wrap; */
+            justify-content: center;
+        }
+
+        .item {
+            background-color: red;
+            width: 700px;
+            height: 200px;
+            font-size: 100px;
+            margin: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+</body>
+
+</html>
