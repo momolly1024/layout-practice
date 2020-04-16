@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08網站麵包屑</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3300484f53.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        body {
+            background-color: wheat;
+        }
+
+        .wrap {
+            padding: 10px 0;
+            background-image: linear-gradient(to right top, #2868db, #0085e4, #119ee5, #53b5e2, #86c9e0);
+            box-shadow: 0 5px 5px rgba(25, 54, 117, 0.6);
+        }
+
+        .breadcrumb {
+            width: 90%;
+            margin: auto;
+            display: flex;
+
+        }
+
+        .breadcrumb li {
+            padding: 0 20px;
+
+        }
+
+        .breadcrumb li+li {
+            padding-left: 0;
+        }
+
+        .breadcrumb li+li:before {
+            content: '>';
+            color: rgb(255, 255, 255);
+            margin-right: 20px;
+
+        }
+
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .breadcrumb li:last-child a,
+        .breadcrumb a:hover {
+            color: rgb(245, 214, 175);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ol class="breadcrumb">
+            <li><a href="#">個人作品</a></li>
+            <li><a href="#">切版練習</a></li>
+            <li><a href="#">CSS部分</a></li>
+            <li><a href="#">金魚系列</a></li>
+            <li><a href="#">FLEX</a></li>
+            <li><a href="#">麵包屑</a></li>
+        </ol>
+    </div>
+</body>
+
+</html>
