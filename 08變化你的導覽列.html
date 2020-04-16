@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>08變化導覽列</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3300484f53.js" crossorigin="anonymous"></script>
     <style>
@@ -22,7 +22,8 @@
 
         .main-header .container {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            /* flex-direction: column; */
             align-items: center;
             padding: 20px;
             max-width: 1200px;
@@ -41,9 +42,14 @@
         }
 
         .main-header .main-nav {
-            margin: auto;
+            /* margin: auto; */
             display: flex;
             /** here */
+
+        }
+
+        .main-header .main-nav:first-of-type {
+            order: -1;
         }
 
         .main-header .main-nav a {
@@ -81,16 +87,18 @@
     <header class="main-header">
         <div class="container">
             <a href="#" class="logo">
-
                 <img src="https://picsum.photos/50/50/?random=5">
             </a>
             <nav class="main-nav">
                 <a href="#">第一條AAA</a>
                 <a href="#">第二條BBB</a>
+
+            </nav>
+            <nav class="main-nav">
+
                 <a href="#">第三條CCC</a>
                 <a href="#">第四條DDD</a>
             </nav>
-
         </div>
     </header>
 </body>
