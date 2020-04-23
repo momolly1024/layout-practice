@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>側邊選單怎麼切 NO013</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;500&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/3300484f53.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-image: linear-gradient(to left bottom, #83adeb, #ada1e5, #d293d0, #ea88b0, #f2858a);
+
+        }
+
+        .side-menu {
+            background-image: linear-gradient(to right top, #83adeb, #ada1e5, #d293d0, #ea88b0, #f2858a);
+            width: 300px;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0;
+            box-shadow: 6px 0px 10px rgb(139, 54, 54);
+            ;
+        }
+
+        .side-menu form {
+            display: flex;
+            margin: 0 10px;
+            margin-bottom: 50px;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .side-menu form input,
+        .side-menu form button {
+            border: none;
+            background-color: transparent;
+            padding: 5px 10px;
+            color: #fff;
+
+        }
+
+
+        .side-menu form input {
+            width: 230px;
+        }
+
+        .side-menu form button {
+            width: 50px;
+        }
+
+        .side-menu form input:focus,
+        .side-menu form button:focus {
+            outline: none;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            font-family: 'Noto Serif TC', serif;
+
+        }
+
+        nav a+a::before {
+            content: '';
+            position: absolute;
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
+            left: 10px;
+            right: 10px;
+            top: 0;
+
+        }
+
+        nav a .fa {
+            margin-right: -1.3em;
+            transform: scale(0);
+            transition: .3s;
+        }
+
+
+        nav a:hover .fa {
+            margin-right: 0em;
+            transform: scale(1);
+        }
+
+        /* placeholder換顏色  */
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="side-menu">
+        <form><input type="search" placeholder="請輸入關鍵字"><button>
+                <i class="fas fa-search"></i></button></form>
+        <nav>
+            <a href="#"><i class="fa far fa-address-card"></i> 123123</a>
+            <a href="#"><i class="fa fas fa-cloud-sun"></i>456456</a>
+            <a href="#"><i class="fa fas fa-burn"></i> 789789</a>
+            <a href="#"><i class="fa fas fa-check-circle"></i> 123123</a>
+            <a href="#"><i class="fa far fa-angry"></i> 456456</a></nav>
+    </div>
+</body>
+
+</html>
