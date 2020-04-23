@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12表格怎麼切</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;500&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 'Noto Serif TC', serif;
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(to right top, #425795, #0081b9, #00abcc, #37d1ce, #90f5c9);
+
+    }
+
+    .table {
+        width: 800px;
+        margin: auto;
+
+    }
+
+    .table table {
+        width: 100%;
+        border: 3px double #666;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .table thead {
+        background-color: #333;
+        color: white;
+    }
+
+    .table thead th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .table thead th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #FFA;
+    }
+
+    .table tbody tr:hover {
+        background-color: #FEE;
+    }
+
+    .table tbody a {
+        color: #777;
+    }
+
+    .table tfoot td:last-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table tfoot td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+
+
+
+
+    .table th {
+        border: 1px solid #aaa;
+    }
+
+    .table td {
+        border: 1px solid #aaa;
+        padding: 6px 10px;
+    }
+
+    .table caption {
+        caption-side: bottom;
+        text-align: right;
+        padding: 10px;
+        color: #ccc;
+    }
+
+    .table caption a {
+        color: #eee;
+    }
+</style>
+
+<body>
+    <div class="table">
+        <table>
+            <caption>第12篇_表格練習切切 :<a href="#">hello_table</a></caption>
+            <thead>
+                <tr>
+                    <th scope="col">1</th>
+                    <th scope="col">2</th>
+                    <th scope="col">3</th>
+                    <th scope="col">4</th>
+                    <th scope="col">5</th>
+                    <th scope="col">6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"> 1</a></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>備註</td>
+                    <td colspan="5">以上資料來源:@@@@@</td>
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
