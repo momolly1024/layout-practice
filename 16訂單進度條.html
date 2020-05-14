@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂單進度條 NO016</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Merriweather:wght@300&family=Noto+Serif+TC:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3300484f53.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: 'Noto Serif TC', serif;
+
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            background-color: rgb(210, 240, 235);
+        }
+
+        .list {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .list li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to right top, #83adeb, #ada1e5, #d293d0, #ea88b0, #f2858a);
+            border-radius: 50%;
+            position: relative;
+            font-size: 30px;
+            color: white;
+            box-shadow: 0 0 0 4px white;
+        }
+
+        .list li .fas {
+            font-size: 60px;
+            margin-bottom: 6px;
+        }
+
+        .list li .fab {
+            font-size: 60px;
+            margin-bottom: 6px;
+        }
+
+        .list li+li {
+            margin-left: 100px;
+        }
+
+        .list li+li::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 5px;
+            background-color: #d293d0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: -100px;
+            z-index: -1;
+            box-shadow: 0 0 0 3px #fff;
+        }
+
+        .list li.active~li {
+            background-image: linear-gradient(90deg, #9fa0a1, #b4afb1);
+
+        }
+
+        .list li.active~li::before {
+            background-color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <ol class="list">
+        <li><i class="fab fa-get-pocket"></i>收到訂單</li>
+        <li class="active"><i class="fas fa-box-open"></i>撿貨中</li>
+        <li><i class="fas fa-shipping-fast"></i>運送中</li>
+        <li><i class="fas fa-home"></i>已送達</li>
+    </ol>
+</body>
+
+</html>
